@@ -247,6 +247,9 @@
     function addToCart(item, price) {
       cart.push({ item, price });
       updateCart();
+      window.dataLayer.push({
+   'Eventname': add_to_cart
+      });
     }
 
     // Update Cart Display
